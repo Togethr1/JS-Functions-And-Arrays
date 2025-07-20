@@ -21,22 +21,26 @@ console.log('Exercise 2 Result:', getArrayLength([1, 2, 3, 4]));
 // Define a function that adds a number to the end of an array and returns the array.
 // Example: addToEnd([1, 2], 3) returns [1, 2, 3]
 function addToEnd(arr, num) {
+  arr.push(num); 
+  return arr;
 }
 console.log('Exercise 3 Result:', addToEnd([1, 2], 3));
 
 // // Exercise 4: isArrayEmpty()
 // // Define a function that returns true if an array is empty, false otherwise.
 // // Example: isArrayEmpty([]) returns true
-// function isArrayEmpty(arr) {
-// }
-// console.log('Exercise 4 Result:', isArrayEmpty([]));
+function isArrayEmpty(arr) {
+  return arr.length === 0;
+}
+console.log('Exercise 4 Result:', isArrayEmpty([]));
 
 // // Exercise 5: greetFirst()
 // // Define a function that takes an array of names and returns a greeting for the first name.
 // // Example: greetFirst(['Alice', 'Bob']) returns 'Hello, Alice!'
-// function greetFirst(names) {
-// }
-// console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
+function greetFirst(names) {
+  return `Hello, ${names[0]}!`;
+}
+console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 
 // // Exercise 6: sumFirstTwo()
 // // Define a function that returns the sum of the first two elements of a number array.
