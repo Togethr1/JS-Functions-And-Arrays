@@ -45,30 +45,35 @@ console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 // // Exercise 6: sumFirstTwo()
 // // Define a function that returns the sum of the first two elements of a number array.
 // // Example: sumFirstTwo([5, 10, 15]) returns 15
-// function sumFirstTwo(numbers) {
-// }
-// console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
+function sumFirstTwo(numbers) {
+  return numbers[0] + numbers[1];
+  }
+console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
 
 // // Exercise 7: containsValue()
 // // Define a function that checks if an array contains a specific value using includes().
 // // Example: containsValue(['cat', 'dog'], 'dog') returns true
-// function containsValue(arr, value) {
-// }
-// console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
+function containsValue(arr, value) {
+  return arr.includes(value);
+}
+console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
 
 // // Exercise 8: joinNames()
 // // Define a function that joins an array of names with ', ' and returns the string.
 // // Example: joinNames(['Sam', 'Alex']) returns 'Sam, Alex'
-// function joinNames(names) {
-// }
-// console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
+function joinNames(names) {
+  return names.join(', ');
+}
+
+console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
 
 // // Exercise 9: getLastIndex()
 // // Define a function that returns the index of the last element in an array.
 // // Example: getLastIndex(['a', 'b', 'c']) returns 2
-// function getLastIndex(arr) {
-// }
-// console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
+function getLastIndex(arr) {
+  return arr.length -1;
+}
+console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
 
 // // Exercise 10: removeFirst()
 // // Define a function that removes the first element of an array and returns the array.
